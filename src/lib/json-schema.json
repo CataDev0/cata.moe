@@ -1,0 +1,28 @@
+{
+    "properties": {
+        "projects": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": ["title", "description", "techStacks", "screens", "repoLink"],
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "techStacks": {
+                        "type": "array"
+                    },
+                    "screens": {
+                        "type": "array"
+                    },
+                    "repoLink": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
