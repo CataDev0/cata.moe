@@ -45,8 +45,8 @@
     },
     {
       "title": "Asp.Net Map reporting system",
-      "description": "A Medusa module for <a href=https://nadeko.bot/>NadekoBot</a>!",
-      "techStacks": ["C#", "Module", "API", ".NET"],
+      "description": "Reporting system to improve Kartverket's maps",
+      "techStacks": ["C#", "ASP.NET", "API", ".NET", "JavaScript", "Bootstrap"],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/IS202-AspNet2308"
     }
