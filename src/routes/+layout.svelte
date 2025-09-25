@@ -9,6 +9,7 @@
 		"KaikiBot Website": "https://kaikibot.xyz/",
 		"NPM Profile": "https://www.npmjs.com/~cataclym",
 	});
+
 </script>
 
 <svelte:head>

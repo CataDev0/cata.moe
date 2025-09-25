@@ -11,7 +11,10 @@ interface Project {
 type System = Exclude<Project, "screens" | "repoLink">;
 type Car = Exclude<Project, "screens" | "repoLink" | "techStacks"> & { specifications: string[] };
 
+export const prerender = true;
+
 export async function load({ fetch }) {
+    
     const res = await fetch("projects.json");
     
     if (!res.ok) throw error(404);
