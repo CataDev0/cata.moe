@@ -1,14 +1,13 @@
-import path from 'path';
-
 export async function load({ fetch }) {
 
-    let counter: Promise<{ path: string, count: number }[]>;
+    let counter: Promise<number | undefined>;
 
     try {
         const res = await fetch("https://stats.cata.moe/stats");
 
         if (res.ok) {
-            counter = res.json().then(json => json.find((entry: { path: string, count: number }) => entry.path === "/")?.count)
+            counter = (res.json() as Promise<{ path: string, count: number }[]>)
+                .then(json => json?.find(entry => entry.path === "/")?.count)
 
             return {
                 counter,
