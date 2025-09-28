@@ -2,7 +2,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { onDestroy, onMount } from 'svelte';
 	import type { PageProps } from './$types';
-	import { blur } from 'svelte/transition';
+	import { blur, fade } from 'svelte/transition';
 	import SystemsCard from '$lib/components/SystemsCard.svelte';
 
 	let { data }: PageProps = $props();
@@ -10,33 +10,42 @@
 
 	let textState = $state(0);
 
-	const texts = ['A Passionate Developer', 'A Car Enthusiast', 'A Linux System Admin'];
+	const texts = [
+		'A Passionate Developer',
+		'A Car Enthusiast',
+		'A Linux System Admin',
+		'A Full-Stack System Developer',
+		'A Package Maintainer'
+	];
 
-	let timeout: NodeJS.Timeout;
-	function updateText() {
-		timeout = setTimeout(() => {
-			textState = textState === texts.length ? 0 : textState + 1;
-			updateText();
+	function updateText(i = 0) {
+		textState = i % texts.length;
+		setTimeout(() => {
+			updateText(i + 1);
 		}, 3000);
 	}
 
 	onMount(() => updateText());
-	onDestroy(() => clearTimeout(timeout));
 </script>
 
 <div class="min-h-screen px-6 py-12 text-white">
 	<div class="mx-auto mb-16 max-w-4xl text-center">
 		<h1 class="mb-4 text-5xl font-extrabold tracking-tight sm:text-6xl">Cata</h1>
-		<p class="h-[1.5em] overflow-hidden text-xl font-light text-gray-300 sm:text-2xl">
-			{#key textState}
-				<span in:blur={{ duration: 300 }} out:blur={{ duration: 300 }}>
-					{texts[textState]}
-				</span>
-			{/key}
+		<p class="relative h-[1.5em] overflow-hidden text-xl font-light text-gray-300 sm:text-2xl">
+			{#each texts as text, i}
+				{#if textState === i}
+					<span
+						class="absolute top-0 left-0 w-full text-center"
+						transition:blur|localtransition:fade
+					>
+						{text}
+					</span>
+				{/if}
+			{/each}
 		</p>
 		{#await counter ?? Promise.resolve(0) then count}
-			<p transition:blur class="text-xl text-gray-500">
-				{count} page visits
+			<p transition:blur class="text-xl text-sky-400">
+				<span class="font-mono">{count}</span> page visits
 			</p>
 		{/await}
 	</div>
