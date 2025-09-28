@@ -5,11 +5,10 @@
 	let { children } = $props();
 
 	const footerLinks = Object.freeze({
-		"GitHub Profile": "https://github.com/CataDev0/",
-		"KaikiBot Website": "https://kaikibot.xyz/",
-		"NPM Profile": "https://www.npmjs.com/~cataclym",
+		'GitHub Profile': 'https://github.com/CataDev0/',
+		'KaikiBot Website': 'https://kaikibot.xyz/',
+		'NPM Profile': 'https://www.npmjs.com/~cataclym'
 	});
-
 </script>
 
 <svelte:head>

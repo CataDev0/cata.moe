@@ -38,7 +38,11 @@
 				</span>
 			{/key}
 		</p>
-		<p class="text-xl text-gray-500">{counter} page visits</p>		
+		{#await counter}
+			<p class="text-xl text-gray-500">Loading...</p>		
+		{:then count} 
+			<p class="text-xl text-gray-500">{count} page visits</p>		
+		{/await}
 	</div>
 
 	<div class="mx-auto max-w-5xl mb-5">
