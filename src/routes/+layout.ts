@@ -13,7 +13,15 @@ type Car = Exclude<Project, "screens" | "repoLink" | "techStacks"> & { specifica
 
 export const prerender = true;
 
-export async function load({ fetch }) {
+export async function load({ fetch, url }) {
+
+    // Ignore return value
+    fetch('https://stats.cata.moe/reportstat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', "Referer": "https://cata.moe"},
+
+        body: JSON.stringify({ path: url.pathname })
+    });
     
     const res = await fetch("projects.json");
     

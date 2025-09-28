@@ -6,7 +6,7 @@
 	import SystemsCard from '$lib/components/SystemsCard.svelte';
 
 	let { data }: PageProps = $props();
-	const { projects, systems } = data;
+	const { projects, systems, counter } = data;
 
 	let textState = $state(0);
 
@@ -38,6 +38,7 @@
 				</span>
 			{/key}
 		</p>
+		<p class="text-xl text-gray-500">{counter} page visits</p>		
 	</div>
 
 	<div class="mx-auto max-w-5xl mb-5">

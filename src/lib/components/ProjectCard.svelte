@@ -53,7 +53,6 @@
 		return { Icon, label: word };
 	});
 
-	// description = description.replace(/<a href=/, "<a class='description' href=")
 </script>
 
 <div class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
