@@ -14,22 +14,28 @@ type Car = Exclude<Project, "screens" | "repoLink" | "techStacks"> & { specifica
 export const prerender = true;
 
 export async function load({ fetch, url }) {
+    try {
+        fetch('https://stats.cata.moe/reportstat', {
+            method: 'POST',
+            headers: {
+                "Content-Type": 'application/json',
+                "Referer": 'https://cata.moe'
+            },
+            body: JSON.stringify({ path: url.pathname })
+        }).catch(() => {
+            // Ignore it
+        });
 
-    // Ignore return value
-    fetch('https://stats.cata.moe/reportstat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', "Referer": "https://cata.moe" },
+        const res = await fetch('projects.json');
+        const { projects, systems, cars }: {
+            projects: Project[],
+            systems: System[],
+            cars: Car[]
+        } = await res.json();
 
-        body: JSON.stringify({ path: url.pathname })
-    });
-
-    const res = await fetch("projects.json");
-
-    if (!res.ok) throw error(404);
-
-    const { projects, systems, cars }: { projects: Project[], systems: System[], cars: Car[] } = await res.json();
-
-    return {
-        projects, systems, cars
-    };
+        return { projects, systems, cars };
+    } catch {
+        throw error(500, 'Unexpected load error');
+    }
 }
+

@@ -34,9 +34,9 @@
 				</span>
 			{/key}
 		</p>
-		{#await counter ?? Promise.resolve([]) then count}
+		{#await counter ?? Promise.resolve(0) then count}
 			<p transition:blur class="text-xl text-gray-500">
-				{count || 0} page visits
+				{count} page visits
 			</p>
 		{/await}
 	</div>
