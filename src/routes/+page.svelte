@@ -36,7 +36,7 @@
 		</p>
 		{#await counter ?? Promise.resolve([]) then count}
 			<p transition:blur class="text-xl text-gray-500">
-				{count.find((e) => e.path === '/')?.count || 0} page visits
+				{count || 0} page visits
 			</p>
 		{/await}
 	</div>
