@@ -34,10 +34,10 @@
 				</span>
 			{/key}
 		</p>
-		{#await counter}
-			<p class="text-xl text-gray-500">Loading...</p>
-		{:then count}
-			<p class="text-xl text-gray-500">{count?.find(e => e.path === "/")?.count || 0} page visits</p>
+		{#await counter ?? Promise.resolve([]) then count}
+			<p transition:blur class="text-xl text-gray-500">
+				{count.find((e) => e.path === '/')?.count || 0} page visits
+			</p>
 		{/await}
 	</div>
 
