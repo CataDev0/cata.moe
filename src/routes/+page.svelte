@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import type { PageProps } from './$types';
-	import { blur, fade } from 'svelte/transition';
+	import { blur } from 'svelte/transition';
 	import SystemsCard from '$lib/components/SystemsCard.svelte';
 
 	let { data }: PageProps = $props();
@@ -50,8 +50,11 @@
 		{/await}
 	</div>
 
-	<div class="mx-auto mb-5 max-w-5xl">
-		<h2 class="mb-8 border-b border-gray-600 pb-2 text-3xl font-bold">Projects</h2>
+	<div class="mx-auto mb-16 max-w-5xl">
+		<div class="mb-8 rounded-lg border-b border-gray-800 bg-gray-700 p-3">
+			<h2 class="mb-2 pl-2 text-3xl font-bold">Projects</h2>
+			<p class="pl-2 text-xl text-gray-300">An Overview of Key Projects I Have Worked On</p>
+		</div>
 		<div class="grid gap-8 md:grid-cols-2">
 			{#each projects as project}
 				<ProjectCard {...project} />
@@ -60,7 +63,10 @@
 	</div>
 
 	<div class="mx-auto mb-5 max-w-5xl">
-		<h2 class="mb-8 border-b border-gray-600 pb-2 text-3xl font-bold">My systems</h2>
+		<div class="mb-8 rounded-lg border-b border-gray-800 bg-gray-700 p-3">
+			<h2 class="mb-2 pl-2 text-3xl font-bold">My systems</h2>
+			<p class="pl-2 text-xl text-gray-300">Current Hardware Lineup</p>
+		</div>
 		<div class="grid gap-8 md:grid-cols-1">
 			{#each systems as system}
 				<SystemsCard {...system} />

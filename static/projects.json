@@ -4,49 +4,94 @@
     {
       "title": "KaikiBot",
       "description": "Customizable Discord bot with lots of unique features",
-      "techStacks": ["Node.js", "Prisma", "MySQL2", "Discord.js", "Express.js", "Sapphire framework", "TypeScript"],
+      "techStacks": [
+        "Node.js",
+        "Prisma",
+        "MySQL2",
+        "Discord.js",
+        "Express.js",
+        "Sapphire framework",
+        "TypeScript"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/KaikiBot"
     },
     {
       "title": "Kaikibot.xyz",
       "description": "Website with tools, information and a fully fledged dashboard",
-      "techStacks": ["Bun.sh", "Svelte/Kit", "TypeScript", "Tailwindcss", "Flowbite", "Auth.js", "Vite"],
+      "techStacks": [
+        "Bun.sh",
+        "Svelte/Kit",
+        "TypeScript",
+        "Tailwindcss",
+        "Flowbite",
+        "Auth.js",
+        "Vite"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/KaikiBot.xyz"
     },
     {
       "title": "nekosapi",
       "description": "Async JavaScript wrapper for <a href=https://nekosapi.com/>NekosAPI</a> API",
-      "techStacks": ["Node.js", "TypeScript", "NPM", "Axios", "Proxy", "TypeDoc", "API"],
+      "techStacks": [
+        "Node.js",
+        "TypeScript",
+        "NPM",
+        "Axios",
+        "Proxy",
+        "TypeDoc",
+        "API"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/nekosapi"
     },
     {
       "title": "discord-js-button-pagination-ts",
       "description": "Forked pagination modified to use button elements and improved functionality",
-      "techStacks": ["NPM", "TypeScript", "TypeDoc", "Discord.js"],
+      "techStacks": [
+        "NPM",
+        "TypeScript",
+        "TypeDoc",
+        "Discord.js"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/discord.js-pagination"
     },
     {
       "title": "waifu-dot-pics",
       "description": "Fast async API wrapper for <a href=https://waifu.pics/>Waifu.pics</a>",
-      "techStacks": ["NPM", "TypeScript", "0 Dependencies"],
+      "techStacks": [
+        "NPM",
+        "TypeScript",
+        "0 Dependencies"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/waifu-dot-pics"
     },
     {
       "title": "NorthShirahebi",
       "description": "A Medusa module for <a href=https://nadeko.bot/>NadekoBot</a>!",
-      "techStacks": ["C#", "Module", "API", ".NET"],
+      "techStacks": [
+        "C#",
+        "Module",
+        "API",
+        ".NET"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/NorthShirahebi"
     },
     {
       "title": "Asp.Net Map reporting system",
       "description": "Reporting system to improve Kartverket's maps",
-      "techStacks": ["C#", "ASP.NET", "API", ".NET", "JavaScript", "Bootstrap"],
+      "techStacks": [
+        "C#",
+        "ASP.NET",
+        "API",
+        ".NET",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/IS202-AspNet2308"
     }
@@ -55,40 +100,76 @@
     {
       "title": "💻 openSUSE Tumbleweed",
       "description": "Desktop computer with high-end computer hardware",
-      "techStacks": ["AMD 5800X", "RADEON RX 6700XT", "32GB Ram", "5.5TB total SSD Storage"]
+      "techStacks": [
+        "AMD 5800X",
+        "RADEON RX 6700XT",
+        "32GB Ram",
+        "5.5TB total SSD Storage"
+      ]
     },
     {
       "title": "🖥️ Debian 12",
       "description": "Home server hosting multiple instances of personal cloud and media services. Raid 5 planned in the future.",
-      "techStacks": ["Nextcloud", "Jellyfin", "Cloudflare Tunnels", "LVM", "9.5TB HDD Storage"]
+      "techStacks": [
+        "Nextcloud",
+        "Jellyfin",
+        "Cloudflare Tunnels",
+        "LVM",
+        "9.5TB HDD Storage"
+      ]
     },
     {
-      "title": "🖥️ Ubuntu VPS",
+      "title": "🖥️ Ubuntu 22.04",
       "description": "Virtual Private Server hosting my projects",
-      "techStacks": ["Cloudflare Tunnels", "Node.js", "Bun.sh", "MariaDB"]
+      "techStacks": [
+        "Cloudflare Tunnels",
+        "Node.js",
+        "Bun.sh",
+        "MariaDB",
+        "Docker"
+      ]
     },
     {
       "title": "💻 EndeavourOS",
       "description": "Laptop for studying and work on the go",
-      "techStacks": ["KDE", "Arch", "Zsh", "Docker"]
+      "techStacks": [
+        "KDE",
+        "Arch",
+        "Zsh",
+        "Docker"
+      ]
     }
   ],
   "cars": [
     {
       "title": "2008 Subaru Outback",
       "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars",
-      "specifications": ["H4 2.5L EJ253 NA", "173hp", "BP9", "AWD"]
+      "specifications": [
+        "H4 2.5L EJ253 NA",
+        "173hp",
+        "BP9",
+        "AWD"
+      ]
     },
     {
       "title": "1987 Mercedes 230E",
       "description": "E-class W124 with the modest 2.3L engine. Gorgeous car and a superb driving experience. Needs some rust and paint work done, and some idling improvements.",
-      "specifications": ["I4 2.3L M102 NA", "130hp"]
+      "specifications": [
+        "I4 2.3L M102 NA",
+        "130hp"
+      ]
     },
     {
       "title": "✨ Wishes",
       "description": "I want to own any of these in the near future",
-      "specifications": ["Subaru Impreza GC/GF Turbo", "Nissan Silvia S13", "Honda Civic EK9", "Lancia Delta Integrale", "Volvo 240 Wagon", "Mazda RX7 FC"]
+      "specifications": [
+        "Subaru Impreza GC/GF Turbo",
+        "Nissan Silvia S13",
+        "Honda Civic EK9",
+        "Lancia Delta Integrale",
+        "Volvo 240 Wagon",
+        "Mazda RX7 FC"
+      ]
     }
   ]
 }
-
