@@ -1,11 +1,15 @@
 <script lang="ts">
 	import {
 		SiAxios,
+		SiBootstrap,
 		SiBun,
 		SiDiscorddotjs,
+		SiDocker,
 		SiDotnet,
 		SiExpress,
 		SiGithub,
+		SiJquery,
+		SiLeaflet,
 		SiMariadb,
 		SiMysql,
 		SiNodedotjs,
@@ -26,26 +30,30 @@
 	export let repoLink: string; // GitHub and/or Live Link
 
 	const iconMap = {
-		prisma: SiPrisma,
-		mysql: SiMysql,
-		mysql2: SiMysql,
-		mariadb: SiMariadb,
-		'node.js': SiNodedotjs,
-		typescript: SiTypescript,
+		'.net': SiDotnet,
 		'bun.sh': SiBun,
-		svelte: SiSvelte,
-		'svelte/kit': SiSvelte,
-		tailwindcss: SiTailwindcss,
+		'c#': SiSharp,
 		'discord.js': SiDiscorddotjs,
 		'express.js': SiExpress,
-		'c#': SiSharp,
-		'.net': SiDotnet,
-		vite: SiVite,
+		'node.js': SiNodedotjs,
+		'svelte/kit': SiSvelte,
 		axios: SiAxios,
-		npm: SiNpm
+		bootstrap: SiBootstrap,
+		docker: SiDocker,
+		jquery: SiJquery,
+		leaflet: SiLeaflet,
+		mariadb: SiMariadb,
+		mysql: SiMysql,
+		mysql2: SiMysql,
+		npm: SiNpm,
+		prisma: SiPrisma,
+		svelte: SiSvelte,
+		tailwindcss: SiTailwindcss,
+		typescript: SiTypescript,
+		vite: SiVite
 	};
 
-	$: techStackIcons = techStacks.map((word) => {
+	$: techStackIcons = techStacks.sort().map((word) => {
 		const key = word.toLowerCase();
 		const Icon = iconMap[key as keyof typeof iconMap] ?? SiGithub;
 		return { Icon, label: word };

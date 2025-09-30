@@ -89,8 +89,12 @@
         "ASP.NET",
         "API",
         ".NET",
-        "JavaScript",
-        "Bootstrap"
+        "EFCore",
+        "Docker",
+        "Leaflet",
+        "TypeScript",
+        "Bootstrap",
+        "MariaDB"
       ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/IS202-AspNet2308"
