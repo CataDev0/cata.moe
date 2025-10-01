@@ -11,19 +11,24 @@
 	export let description: string; // (1–2 lines)
 	export let techStacks: string[];
 
-	const systemIcons = Object.freeze({
-		ubuntu: SiUbuntu,
-		opensuse: SiOpensuse,
-		debian: SiDebian,
-		endeavouros: SiEndeavouros
+	const systemTheme: { [index: string]: [typeof SiUbuntu, string] } = Object.freeze({
+		ubuntu: [SiUbuntu, '#E95420'],
+		opensuse: [SiOpensuse, '#73ba25'],
+		debian: [SiDebian, '#a80030'],
+		endeavouros: [SiEndeavouros, '#7F3FBF']
 	});
 
-	const Icon =
-		Object.entries(systemIcons).find(([distro]) => title.toLowerCase().includes(distro))?.[1] ||
-		SiLinux;
+	const theme = Object.entries(systemTheme).find(([distro]) =>
+		title.toLowerCase().includes(distro)
+	)?.[1] || [SiLinux, '#003778'];
+
+	const [Icon, color] = theme;
 </script>
 
-<div class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div
+	class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+	style="border-bottom: {color} solid 0.3rem;"
+>
 	<h3 class="mb-2 flex items-center gap-2 text-2xl font-semibold text-nowrap whitespace-nowrap">
 		<Icon size={28} />{title}
 	</h3>

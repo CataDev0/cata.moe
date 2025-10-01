@@ -29,7 +29,7 @@
 	// export let Key features or challenges
 	export let repoLink: string; // GitHub and/or Live Link
 
-	const iconMap = {
+	const iconMap = Object.freeze({
 		'.net': SiDotnet,
 		'bun.sh': SiBun,
 		'c#': SiSharp,
@@ -51,16 +51,33 @@
 		tailwindcss: SiTailwindcss,
 		typescript: SiTypescript,
 		vite: SiVite
-	};
+	});
+
+	const colors = Object.freeze({
+		"svelte/kit": "#ff3e00",
+		typescript: "#3178C6",
+		"c#": "#512bd4"
+	});
 
 	$: techStackIcons = techStacks.sort().map((word) => {
 		const key = word.toLowerCase();
 		const Icon = iconMap[key as keyof typeof iconMap] ?? SiGithub;
 		return { Icon, label: word };
 	});
+
+function getTechColor(techs: string[]) {
+	for (const tech of techs) {
+		const key = tech.toLowerCase();
+		if (key in colors) return colors[key as keyof typeof colors];
+	}
+	return undefined;
+}
+
+$: color = getTechColor(techStacks);
+
 </script>
 
-<div class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+<div class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl" style="border-bottom: {color} solid 0.3rem;">
 	<h3 class="mb-2 text-2xl font-semibold">{title}</h3>
 	<div class="project-card-description mb-4 text-gray-300">{@html description}</div>
 	<div class="mb-4 flex flex-wrap items-center gap-4">
