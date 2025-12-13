@@ -109,7 +109,8 @@
         "RADEON RX 6700XT",
         "32GB Ram",
         "5.5TB total SSD Storage"
-      ]
+      ],
+      "reason": "Distro hopping led me here. Tumbleweed has worked great for me ever since I switched from Windows, and supports everything needed for software development, gaming and general usage."
     },
     {
       "title": "🖥️ Debian 12",
@@ -120,7 +121,8 @@
         "Cloudflare Tunnels",
         "LVM",
         "9.5TB HDD Storage"
-      ]
+      ],
+      "reason": "Debian is perhaps not the most up to date distro, but it is stable. Inherently well tested software, solid reliability. Debian's wide software support can be matched with Ubuntu, despite not being a Cannonical product."
     },
     {
       "title": "🖥️ Ubuntu 22.04",
@@ -131,7 +133,8 @@
         "Bun.sh",
         "MariaDB",
         "Docker"
-      ]
+      ],
+      "reason": "Ubuntu is the best supported and most used distribution in the cloud infrastructure world (citation needed). It's uncomplicated."
     },
     {
       "title": "💻 EndeavourOS",
@@ -141,7 +144,8 @@
         "Arch",
         "Zsh",
         "Docker"
-      ]
+      ],
+      "reason": "<a href=https://aur.archlinux.org/>Arch User Repository</a>. The all powerful source of all kinds of niche packages a software developer could ever need. Also having up to date packages is very beneficial in an environment with emerging technologies around every corner."
     }
   ],
   "cars": [
@@ -172,7 +176,8 @@
         "Honda Civic EK9",
         "Lancia Delta Integrale",
         "Volvo 240 Wagon",
-        "Mazda RX7 FC"
+        "Mazda RX7 FC",
+        "Datsun 280Z"
       ]
     }
   ]
