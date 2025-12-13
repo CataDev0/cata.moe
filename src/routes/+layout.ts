@@ -6,10 +6,11 @@ interface Project {
     techStacks: string[];
     screens: [];
     repoLink: string;
+    reason: string;
 }
 
 type System = Exclude<Project, "screens" | "repoLink">;
-type Car = Exclude<Project, "screens" | "repoLink" | "techStacks"> & { specifications: string[] };
+type Car = Exclude<Project, "screens" | "repoLink" | "techStacks" | "reason"> & { specifications: string[] };
 
 export const prerender = true;
 

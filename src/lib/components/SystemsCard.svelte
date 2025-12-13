@@ -7,9 +7,13 @@
 		SiUbuntu
 	} from '@icons-pack/svelte-simple-icons';
 
-	export let title: string;
-	export let description: string; // (1–2 lines)
-	export let techStacks: string[];
+
+	let { title, description, techStacks, reason }: {
+		title: string;
+		description: string; 
+		techStacks: string[];
+		reason: string; 
+	} = $props();
 
 	const systemTheme: { [index: string]: [typeof SiUbuntu, string] } = Object.freeze({
 		ubuntu: [SiUbuntu, '#E95420'],
@@ -23,6 +27,9 @@
 	)?.[1] || [SiLinux, '#003778'];
 
 	const [Icon, color] = theme;
+	const cid = Math.random().toString(16).slice(2)
+
+	let hiddenClass = $state("hidden");
 </script>
 
 <div
@@ -40,4 +47,10 @@
 			</div>
 		{/each}
 	</div>
+	{#if reason}
+		<button class="text-gray-400 text-xs opacity-75 hover:opacity-100 cursor-pointer" onclick={() => hiddenClass = hiddenClass ? "" : "hidden"}>Why?</button>
+		<div id={cid} class="{hiddenClass} bg-gray-700 rounded p-1 px-2">
+			<p class="mb-4 text-gray-300">{reason}</p>
+		</div>
+	{/if}
 </div>

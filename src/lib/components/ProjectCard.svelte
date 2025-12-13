@@ -23,11 +23,10 @@
 	} from '@icons-pack/svelte-simple-icons';
 
 	export let title: string;
-	export let description: string; // (1–2 lines)
+	export let description: string; 
 	export let techStacks: string[];
-	export let screens: string[]; // or Demo GIF
-	// export let Key features or challenges
-	export let repoLink: string; // GitHub and/or Live Link
+	// export let screens: string[]; 
+	export let repoLink: string; 
 
 	const iconMap = Object.freeze({
 		'.net': SiDotnet,

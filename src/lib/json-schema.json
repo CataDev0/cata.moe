@@ -20,6 +20,9 @@
                     },
                     "repoLink": {
                         "type": "string"
+                    },
+                    "reason": {
+                        "type": "string"
                     }
                 }
             }
