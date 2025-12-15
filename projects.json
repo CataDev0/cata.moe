@@ -145,7 +145,7 @@
         "Zsh",
         "Docker"
       ],
-      "reason": "<a href=https://aur.archlinux.org/>Arch User Repository</a>. The all powerful source of all kinds of niche packages a software developer could ever need. Also having up to date packages is very beneficial in an environment with emerging technologies around every corner."
+      "reason": "[Arch User Repository](https://aur.archlinux.org/). The all powerful source of all kinds of niche packages a software developer could ever need. Also having up to date packages is very beneficial in an environment with emerging technologies around every corner."
     }
   ],
   "cars": [
