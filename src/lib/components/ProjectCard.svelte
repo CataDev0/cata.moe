@@ -23,10 +23,10 @@
 	} from '@icons-pack/svelte-simple-icons';
 
 	export let title: string;
-	export let description: string; 
+	export let description: string;
 	export let techStacks: string[];
-	// export let screens: string[]; 
-	export let repoLink: string; 
+	// export let screens: string[];
+	export let repoLink: string;
 
 	const iconMap = Object.freeze({
 		'.net': SiDotnet,
@@ -53,9 +53,9 @@
 	});
 
 	const colors = Object.freeze({
-		"svelte/kit": "#ff3e00",
-		typescript: "#3178C6",
-		"c#": "#512bd4"
+		'svelte/kit': '#ff3e00',
+		typescript: '#3178C6',
+		'c#': '#512bd4'
 	});
 
 	$: techStackIcons = techStacks.sort().map((word) => {
@@ -64,19 +64,21 @@
 		return { Icon, label: word };
 	});
 
-function getTechColor(techs: string[]) {
-	for (const tech of techs) {
-		const key = tech.toLowerCase();
-		if (key in colors) return colors[key as keyof typeof colors];
+	function getTechColor(techs: string[]) {
+		for (const tech of techs) {
+			const key = tech.toLowerCase();
+			if (key in colors) return colors[key as keyof typeof colors];
+		}
+		return undefined;
 	}
-	return undefined;
-}
 
-$: color = getTechColor(techStacks);
-
+	$: color = getTechColor(techStacks);
 </script>
 
-<div class="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl" style="border-bottom: {color} solid 0.3rem;">
+<div
+	class="rounded-lg border-2 border-transparent bg-gradient-to-br from-gray-800 to-gray-900 p-6 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+	style:border-color={color}
+>
 	<h3 class="mb-2 text-2xl font-semibold">{title}</h3>
 	<div class="project-card-description mb-4 text-gray-300">{@html description}</div>
 	<div class="mb-4 flex flex-wrap items-center gap-4">
@@ -87,14 +89,5 @@ $: color = getTechColor(techStacks);
 			</div>
 		{/each}
 	</div>
-	<a href={repoLink} target="_blank">View Project →</a>
+	<a href={repoLink} target="_blank" class="text-blue-400 hover:underline">View Project →</a>
 </div>
-
-<style>
-	a {
-		color: var(--color-blue-400) !important;
-	}
-	a:hover {
-		text-decoration: underline solid 1px !important;
-	}
-</style>

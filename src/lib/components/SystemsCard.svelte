@@ -7,13 +7,19 @@
 		SiUbuntu
 	} from '@icons-pack/svelte-simple-icons';
 	import type { SvelteComponent } from 'svelte';
+	import { slide } from 'svelte/transition';
 
-
-	let { title, description, techStacks, reason, overrideIcon }: {
+	let {
+		title,
+		description,
+		techStacks,
+		reason,
+		overrideIcon
+	}: {
 		title: string;
-		description: string; 
+		description: string;
 		techStacks: string[];
-		reason: string | null; 
+		reason: string | null;
 		overrideIcon: typeof SvelteComponent<Record<string, any>, any, any> | null;
 	} = $props();
 
@@ -29,9 +35,9 @@
 	)?.[1] || [overrideIcon ?? SiLinux, '#003778'];
 
 	const [Icon, color] = theme;
-	const cid = Math.random().toString(16).slice(2)
+	const cid = Math.random().toString(16).slice(2);
 
-	let hiddenClass = $state("hidden");
+	let showReason = $state(false); // Changed from hiddenClass
 	function embedLink(input: string) {
 		return input.replace(
 			/\[([^\]]+)]\((https?:\/\/[^)]+)\)/gm,
@@ -41,8 +47,8 @@
 </script>
 
 <div
-	class="rounded-lg bg-gray-800  p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl"
-	style="border-bottom: {color} solid 0.3rem;"
+	class="rounded-lg border-2 border-transparent bg-gradient-to-br from-gray-800 to-gray-900 p-6 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl"
+	style:border-color={color}
 >
 	<h3 class="mb-2 flex items-center gap-2 text-2xl font-semibold text-nowrap whitespace-nowrap">
 		<Icon size={28} />{title}
@@ -56,9 +62,14 @@
 		{/each}
 	</div>
 	{#if reason}
-		<button class="text-gray-400 text-xs opacity-75 hover:opacity-100 cursor-pointer" onclick={() => hiddenClass = hiddenClass ? "" : "hidden"}>Why?</button>
-		<div id={cid} class="{hiddenClass} bg-gray-700 rounded-md p-2 pt-1 mt-1">
-			<p class="inline text-gray-300 align-middle">{@html embedLink(reason)}</p>
-		</div>
+		<button
+			class="cursor-pointer text-xs text-gray-400 opacity-75 hover:opacity-100"
+			onclick={() => (showReason = !showReason)}>Why?</button
+		>
+		{#if showReason}
+			<div id={cid} class="mt-1 rounded-md bg-gray-700 p-2 pt-1" in:slide|local out:slide|local>
+				<p class="inline align-middle text-gray-300">{@html embedLink(reason)}</p>
+			</div>
+		{/if}
 	{/if}
 </div>

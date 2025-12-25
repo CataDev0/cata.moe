@@ -2,9 +2,22 @@
 @plugin '@tailwindcss/typography';
 
 .project-card-description a {
-        color: var(--color-blue-400) !important;
+	color: var(--color-blue-400) !important;
 }
 
 .project-card-description a:hover {
-        text-decoration: underline solid 1px;
+	text-decoration: underline solid 1px;
+}
+
+.revealable {
+	opacity: 0;
+	transform: translateY(20px);
+	transition:
+		opacity 0.5s ease-out,
+		transform 0.5s ease-out;
+}
+
+.revealable.visible {
+	opacity: 1;
+	transform: translateY(0);
 }
