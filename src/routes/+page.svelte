@@ -7,6 +7,7 @@
 
 	let { data }: PageProps = $props();
 	const { projects, systems, counter } = data;
+	const overrideIcon = null;
 
 	let textState = $state(0);
 
@@ -69,7 +70,7 @@
 		</div>
 		<div class="grid gap-8 md:grid-cols-1">
 			{#each systems as system}
-				<SystemsCard {...system} />
+				<SystemsCard {...system} { overrideIcon } />
 			{/each}
 		</div>
 	</div>

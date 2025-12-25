@@ -57,7 +57,7 @@
 	</div>
 	{#if reason}
 		<button class="text-gray-400 text-xs opacity-75 hover:opacity-100 cursor-pointer" onclick={() => hiddenClass = hiddenClass ? "" : "hidden"}>Why?</button>
-		<div id={cid} class="{hiddenClass} bg-gray-700 rounded-md p-2">
+		<div id={cid} class="{hiddenClass} bg-gray-700 rounded-md p-2 pt-1 mt-1">
 			<p class="inline text-gray-300 align-middle">{@html embedLink(reason)}</p>
 		</div>
 	{/if}
