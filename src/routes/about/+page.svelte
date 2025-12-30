@@ -6,6 +6,9 @@
 		SiSvelte,
 		SiTailwindcss
 	} from '@icons-pack/svelte-simple-icons';
+
+	// IconSize
+	const size = 54;
 </script>
 
 <div class="min-h-screen bg-gradient-to-b from-gray-900 to-black px-6 py-12 text-white">
@@ -15,11 +18,11 @@
 			cata.moe is a portfolio made possible with various technologies, such as
 		</p>
 		<div class="m-auto flex w-full items-center justify-center gap-4">
-			<SiBun size={54} />
-			<SiCloudflare size={54} />
-			<SiGithub size={54} />
-			<SiSvelte size={54} />
-			<SiTailwindcss size={54} />
+			<SiBun {size} />
+			<SiCloudflare {size} />
+			<SiGithub {size} />
+			<SiSvelte {size} />
+			<SiTailwindcss {size} />
 		</div>
 	</div>
 </div>
