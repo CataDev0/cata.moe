@@ -113,12 +113,15 @@
       "reason": "Distro hopping led me here. Tumbleweed has worked great for me ever since I switched from Windows, and supports everything needed for software development, gaming and general usage."
     },
     {
-      "title": "🖥️ Debian 12",
+      "title": "🖥️ Debian 13",
       "description": "Home server hosting multiple instances of personal cloud and media services. Raid 5 planned in the future.",
       "techStacks": [
         "Nextcloud",
         "Jellyfin",
         "Cloudflare Tunnels",
+        "Docker",
+        "Portainer",
+        "Headscale",
         "LVM",
         "9.5TB HDD Storage"
       ],
@@ -151,7 +154,7 @@
   "cars": [
     {
       "title": "2008 Subaru Outback",
-      "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars",
+      "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars. I wish I could swap the engine with an EJ20 Turbo for more and reliable HP gain.",
       "specifications": [
         "H4 2.5L EJ253 NA",
         "173hp",
@@ -161,7 +164,7 @@
     },
     {
       "title": "1987 Mercedes 230E",
-      "description": "E-class W124 with the modest 2.3L engine. Gorgeous car and a superb driving experience. Needs some rust and paint work done, and some idling improvements.",
+      "description": "E-class W124 with the modest 2.3L engine. Gorgeous car and a superb driving experience. Needs some rust and paint work done, and some idling improvements. Planning an EFI conversion for reponsive throttle, better fuel economy and smoother running car.",
       "specifications": [
         "I4 2.3L M102 NA",
         "130hp"
@@ -171,13 +174,14 @@
       "title": "✨ Wishes",
       "description": "I want to own any of these in the near future",
       "specifications": [
-        "Subaru Impreza GC/GF Turbo",
-        "Nissan Silvia S13",
-        "Honda Civic EK9",
+        "Datsun 280Z",
+        "Honda Civic EK9 B16",
+        "Honda CR-X B16",
         "Lancia Delta Integrale",
-        "Volvo 240 Wagon",
-        "Mazda RX7 FC",
-        "Datsun 280Z"
+        "Mazda RX7 FC 13BT",
+        "Nissan Silvia S13 SR20DET",
+        "Subaru Impreza GC/GF Turbo",
+        "Volvo 245 Wagon B23"
       ]
     }
   ]
