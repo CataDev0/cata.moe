@@ -82,7 +82,7 @@
           "engine": {
             "type": "I4 1.6L",
             "code": "B16",
-            "aspiration": "NA"
+            "aspiration": "Turbo"
           },
           "drivetrain": {
             "system": "FWD"
@@ -98,7 +98,7 @@
           "engine": {
             "type": "I4 1.6L",
             "code": "B16",
-            "aspiration": "NA"
+            "aspiration": "Turbo"
           },
           "drivetrain": {
             "system": "FWD"
@@ -129,7 +129,7 @@
           "engine": {
             "type": "I4 2.3L",
             "code": "B23",
-            "aspiration": "NA"
+            "aspiration": "Turbo"
           },
           "drivetrain": {
             "system": "RWD"
