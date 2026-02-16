@@ -1,5 +1,5 @@
-{ 
-    "cars": [
+{
+  "cars": [
     {
       "title": "2008 Subaru Outback",
       "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars. I wish I could swap the engine with an EJ20 Turbo for more and reliable HP gain.",
@@ -19,7 +19,7 @@
       },
       "media": {
         "images": [
-          "https://images.unsplash.com/photo-1595272766025-90700282f3dc?w=500"
+          "https://images.unsplash.com/photo-1595272766025-90700282f3dc?w=1080"
         ]
       }
     },
@@ -38,7 +38,7 @@
       "model": {},
       "media": {
         "images": [
-          "https://images.unsplash.com/photo-1725339063695-9dd1dc308443?w=500"
+          "https://images.unsplash.com/photo-1725339063695-9dd1dc308443?w=1080"
         ]
       }
     },
@@ -57,7 +57,7 @@
           },
           "media": {
             "images": [
-              "https://images.unsplash.com/photo-1698263735379-ba0cec417376"
+              "https://images.unsplash.com/photo-1698263735379-ba0cec417376?w=1080"
             ]
           }
         },
@@ -73,7 +73,7 @@
           },
           "media": {
             "images": [
-              "https://images.unsplash.com/photo-1719645580953-039aa7a4fd9d"
+              "https://images.unsplash.com/photo-1719645580953-039aa7a4fd9d?w=1080"
             ]
           }
         },
@@ -89,7 +89,7 @@
           },
           "media": {
             "images": [
-              "https://images.unsplash.com/photo-1637911717904-0062c775f4ed"
+              "https://images.unsplash.com/photo-1637911717904-0062c775f4ed?w=1080"
             ]
           }
         },
@@ -120,7 +120,7 @@
           },
           "media": {
             "images": [
-              "https://images.unsplash.com/photo-1653597415522-0b3065fbb5de"
+              "https://images.unsplash.com/photo-1653597415522-0b3065fbb5de?w=1080"
             ]
           }
         },
@@ -136,7 +136,7 @@
           },
           "media": {
             "images": [
-              "https://images.unsplash.com/photo-1514732286501-e307d402a0e9"
+              "https://images.unsplash.com/photo-1514732286501-e307d402a0e9?w=1080"
             ]
           }
         },
@@ -157,10 +157,11 @@
           }
         },
         {
-          "title": "Datsun 280Z",
+          "title": "Datsun 240Z / 280Z",
+          "description": "Classic RWD sports car—either generation is gorgeous. The 240Z is purer and lighter, while the 280Z adds more power. Both have that perfect balance of simple engineering and engaging driving experience. A timeless design that still turns heads.",
           "engine": {
-            "type": "I6 2.8L",
-            "code": "L28",
+            "type": "I6 2.4-2.8L",
+            "code": "L24 / L28",
             "aspiration": "NA"
           },
           "drivetrain": {
@@ -169,6 +170,86 @@
           "media": {
             "images": [
               "https://images.classic.com/vehicles/80f67279d1a3df204a185b5c037fba97f399bc98.jpg?auto=format&fit=crop&ar=16:9"
+            ]
+          }
+        },
+        {
+          "title": "Nissan Skyline R32 GT-R",
+          "description": "The legendary R32 is a masterpiece of 90s turbo AWD perf- Actually, I just like how it looks, not too aggressive and sitting low.",
+          "engine": {
+            "type": "I6 2.6L",
+            "code": "RB26DETT",
+            "aspiration": "Twin Turbo"
+          },
+          "performance": {
+            "horsepower": "280hp"
+          },
+          "drivetrain": {
+            "system": "AWD"
+          },
+          "model": {
+            "code": "R32"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1761301592776-cbb99317aec6?w=1080"
+            ]
+          }
+        },
+        {
+          "title": "Porsche 944",
+          "description": "Mid-engine sports car. The 944 is underrated in the Porsche lineup. And it has such a good sillhouette. I'd do a suspension upgrade for better handling. It gives me the same vibes as the RX7 FC, but with a more classic look.",
+          "engine": {
+            "type": "I4 2.5-3L",
+            "code": "M44",
+            "aspiration": "Turbo/NA"
+          },
+          "performance": {
+            "horsepower": "208hp"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "model": {
+            "code": "944"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1721911268932-eab31d115622?w=774"
+            ]
+          }
+        },
+        {
+          "title": "Nissan 300ZX Z31",
+          "description": "Gorgeous machine with tech ahead of its time. Twin turbos, sophisticated suspension, and a dashboard full of 80s/90s innovation. Pure performance wrapped in an iconic silhouette. A golden age of Japanese sports cars.",
+          "engine": {
+            "type": "V6 3.0L",
+            "code": "VG30DETT",
+            "aspiration": "Twin Turbo"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1622713748203-5fb01b936748?w=1080"
+            ]
+          }
+        },
+        {
+          "title": "Nissan Skyline R31",
+          "description": "The cute, retro early version of the later Skylines. Classic 80s sedan proportions. A bit less aggressive than the R32, but charming in its simplicity.",
+          "engine": {
+            "type": "I6 2.0-2.6L",
+            "code": "RB20 / RB26",
+            "aspiration": "Turbo"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://images.classic.com/vehicles/116c2632d3f8fc5281ce1b33d0a88504b8a6c196.jpg?w=1200"
             ]
           }
         }
