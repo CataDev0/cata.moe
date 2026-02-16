@@ -14,7 +14,9 @@
 		<h2 class="mb-8 border-b border-gray-600 pb-2 text-3xl font-bold">List</h2>
 		<div class="grid gap-8 md:grid-cols-2">
 			{#each cars as car}
-				<CarCard {...car} />
+				<div class={car.wishlist ? 'md:col-span-2' : ''}>
+					<CarCard {...car} />
+				</div>
 			{/each}
 		</div>
 	</div>

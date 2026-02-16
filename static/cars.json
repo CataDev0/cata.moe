@@ -1,0 +1,178 @@
+{ 
+    "cars": [
+    {
+      "title": "2008 Subaru Outback",
+      "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars. I wish I could swap the engine with an EJ20 Turbo for more and reliable HP gain.",
+      "engine": {
+        "type": "H4 2.5L",
+        "code": "EJ253",
+        "aspiration": "NA"
+      },
+      "performance": {
+        "horsepower": "173hp"
+      },
+      "drivetrain": {
+        "system": "AWD"
+      },
+      "model": {
+        "code": "BP9"
+      },
+      "media": {
+        "images": [
+          "https://images.unsplash.com/photo-1595272766025-90700282f3dc?w=500"
+        ]
+      }
+    },
+    {
+      "title": "1987 Mercedes 230E",
+      "description": "E-class W124 with the modest 2.3L engine. Gorgeous car and a superb driving experience. Needs some rust and paint work done, and some idling improvements. Planning an EFI conversion for reponsive throttle, better fuel economy and smoother running car.",
+      "engine": {
+        "type": "I4 2.3L",
+        "code": "M102",
+        "aspiration": "NA"
+      },
+      "performance": {
+        "horsepower": "130hp"
+      },
+      "drivetrain": {},
+      "model": {},
+      "media": {
+        "images": [
+          "https://images.unsplash.com/photo-1725339063695-9dd1dc308443?w=500"
+        ]
+      }
+    },
+    {
+      "title": "✨ Wishes",
+      "description": "I want to own any of these in the near future",
+      "wishlist": [
+        {
+          "title": "Subaru Impreza GC/GF Turbo",
+          "engine": {
+            "type": "H4 2.0L",
+            "aspiration": "Turbo"
+          },
+          "drivetrain": {
+            "system": "AWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1698263735379-ba0cec417376"
+            ]
+          }
+        },
+        {
+          "title": "Nissan Silvia S13 SR20DET",
+          "engine": {
+            "type": "I4 2.0L",
+            "code": "SR20DET",
+            "aspiration": "Turbo"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1719645580953-039aa7a4fd9d"
+            ]
+          }
+        },
+        {
+          "title": "Honda Civic EK9",
+          "engine": {
+            "type": "I4 1.6L",
+            "code": "B16",
+            "aspiration": "NA"
+          },
+          "drivetrain": {
+            "system": "FWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1637911717904-0062c775f4ed"
+            ]
+          }
+        },
+        {
+          "title": "Honda CR-X B16",
+          "engine": {
+            "type": "I4 1.6L",
+            "code": "B16",
+            "aspiration": "NA"
+          },
+          "drivetrain": {
+            "system": "FWD"
+          },
+          "media": {
+            "images": [
+              "https://cdn.dealeraccelerate.com/international/1/470/23427/1920x1440/1991-honda-cr-x-sir"
+            ]
+          }
+        },
+        {
+          "title": "Lancia Delta Integrale",
+          "engine": {
+            "type": "I4 2.0L",
+            "aspiration": "Turbo"
+          },
+          "drivetrain": {
+            "system": "AWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1653597415522-0b3065fbb5de"
+            ]
+          }
+        },
+        {
+          "title": "Volvo 245 Wagon B23",
+          "engine": {
+            "type": "I4 2.3L",
+            "code": "B23",
+            "aspiration": "NA"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://images.unsplash.com/photo-1514732286501-e307d402a0e9"
+            ]
+          }
+        },
+        {
+          "title": "Mazda RX7 FC 13BT",
+          "engine": {
+            "type": "Rotary 1.3L",
+            "code": "13BT",
+            "aspiration": "Turbo"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://www.fastcar.co.uk/wp-content/uploads/sites/2/Rocket-Bunny-FC-RX-7-14.jpg"
+            ]
+          }
+        },
+        {
+          "title": "Datsun 280Z",
+          "engine": {
+            "type": "I6 2.8L",
+            "code": "L28",
+            "aspiration": "NA"
+          },
+          "drivetrain": {
+            "system": "RWD"
+          },
+          "media": {
+            "images": [
+              "https://images.classic.com/vehicles/80f67279d1a3df204a185b5c037fba97f399bc98.jpg?auto=format&fit=crop&ar=16:9"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

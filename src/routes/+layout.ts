@@ -10,8 +10,22 @@ interface Project {
 }
 
 type System = Exclude<Project, 'screens' | 'repoLink'>;
-type Car = Exclude<Project, 'screens' | 'repoLink' | 'techStacks' | 'reason'> & {
-	specifications: string[];
+
+type Car = {
+	title: string;
+	description: string;
+	engine?: { type?: string; code?: string; aspiration?: string };
+	performance?: { horsepower?: string };
+	drivetrain?: { system?: string };
+	model?: { code?: string };
+	media?: { images?: string[] };
+	wishlist?: Array<{
+		title: string;
+		engine?: { type?: string; code?: string; aspiration?: string };
+		performance?: { horsepower?: string };
+		drivetrain?: { system?: string };
+		media?: { images?: string[] };
+	}>;
 };
 
 export const prerender = true;
@@ -29,16 +43,18 @@ export async function load({ fetch, url }) {
 			// Ignore it
 		});
 
-		const res = await fetch('projects.json');
-		const {
+		const [projectsRes, carsRes] = await Promise.all([
+			fetch('projects.json'),
+			fetch('cars.json')
+		]);
+
+		const [{
 			projects,
-			systems,
-			cars
-		}: {
-			projects: Project[];
-			systems: System[];
-			cars: Car[];
-		} = await res.json();
+			systems
+		}, { cars }]: [projects: { projects: Project[], systems: System[] }, cars: { cars: Car[] }] = await Promise.all([
+			projectsRes.json(),
+			carsRes.json()
+		]);
 
 		return { projects, systems, cars };
 	} catch {
