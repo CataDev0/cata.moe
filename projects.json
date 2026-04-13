@@ -98,6 +98,18 @@
       ],
       "screens": [],
       "repoLink": "https://github.com/CataDev0/IS202-AspNet2308"
+    },
+    {
+      "title": "floorp-bin",
+      "description": "Package maintainer for the Floorp browser on openSUSE Build Service",
+      "techStacks": [
+        "openSUSE",
+        "OBS",
+        "RPM",
+        "Packaging"
+      ],
+      "screens": [],
+      "repoLink": "https://build.opensuse.org/package/show/home:catadev0/floorp-bin"
     }
   ],
   "systems": [
@@ -140,7 +152,7 @@
       "reason": "Ubuntu is the best supported and most used distribution in the cloud infrastructure world (citation needed). It's uncomplicated."
     },
     {
-      "title": "💻 EndeavourOS",
+      "title": "💻 ArchLinux",
       "description": "Laptop for studying and work on the go",
       "techStacks": [
         "KDE",
@@ -149,26 +161,6 @@
         "Docker"
       ],
       "reason": "[Arch User Repository](https://aur.archlinux.org/). The all powerful source of all kinds of niche packages a software developer could ever need. Also having up to date packages is very beneficial in an environment with emerging technologies around every corner."
-    }
-  ],
-  "cars": [
-    {
-      "title": "2008 Subaru Outback",
-      "description": "BP Legacy/Outbacks are the best looking wagons, and I love mine. I'd love to put it on coilovers and upgrade the anti-roll bars. I wish I could swap the engine with an EJ20 Turbo for more and reliable HP gain.",
-      "specifications": [
-        "H4 2.5L EJ253 NA",
-        "173hp",
-        "BP9",
-        "AWD"
-      ]
-    },
-    {
-      "title": "1987 Mercedes 230E",
-      "description": "E-class W124 with the modest 2.3L engine. Gorgeous car and a superb driving experience. Needs some rust and paint work done, and some idling improvements. Planning an EFI conversion for reponsive throttle, better fuel economy and smoother running car.",
-      "specifications": [
-        "I4 2.3L M102 NA",
-        "130hp"
-      ]
     }
   ]
 }
