@@ -13,7 +13,7 @@ export async function load({ fetch }) {
 				counter
 			};
 		}
-	} catch (e) {
+	} catch {
 		return {};
 	}
 }

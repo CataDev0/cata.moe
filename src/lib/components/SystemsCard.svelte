@@ -1,5 +1,6 @@
 <script lang="ts">
 	import {
+	SiArchlinux,
 		SiDebian,
 		SiEndeavouros,
 		SiLinux,
@@ -27,7 +28,7 @@
 		ubuntu: [SiUbuntu, '#E95420'],
 		opensuse: [SiOpensuse, '#73ba25'],
 		debian: [SiDebian, '#a80030'],
-		endeavouros: [SiEndeavouros, '#7F3FBF']
+		archlinux: [SiArchlinux, "#1793d1"],
 	});
 
 	const theme = Object.entries(systemTheme).find(([distro]) =>
@@ -37,7 +38,7 @@
 	const [Icon, color] = theme;
 	const cid = Math.random().toString(16).slice(2);
 
-	let showReason = $state(false); // Changed from hiddenClass
+	let showReason = $state(false);
 	function embedLink(input: string) {
 		return input.replace(
 			/\[([^\]]+)]\((https?:\/\/[^)]+)\)/gm,
@@ -55,7 +56,7 @@
 	</h3>
 	<p class="mb-4 text-gray-300">{description}</p>
 	<div class="mb-4 flex flex-wrap items-center gap-4">
-		{#each techStacks as techStack}
+		{#each techStacks as techStack (techStack)}
 			<div class="flex items-center gap-2 rounded bg-gray-700 px-3 py-1 text-sm text-white">
 				<span>{techStack}</span>
 			</div>

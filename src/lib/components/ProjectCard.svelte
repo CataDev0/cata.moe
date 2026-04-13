@@ -14,6 +14,7 @@
 		SiMysql,
 		SiNodedotjs,
 		SiNpm,
+		SiOpensuse,
 		SiPrisma,
 		SiSharp,
 		SiSvelte,
@@ -45,17 +46,19 @@
 		mysql: SiMysql,
 		mysql2: SiMysql,
 		npm: SiNpm,
+		opensuse: SiOpensuse,
 		prisma: SiPrisma,
 		svelte: SiSvelte,
 		tailwindcss: SiTailwindcss,
 		typescript: SiTypescript,
-		vite: SiVite
+		vite: SiVite,
 	});
 
 	const colors = Object.freeze({
+		'c#': '#512bd4',
 		'svelte/kit': '#ff3e00',
 		typescript: '#3178C6',
-		'c#': '#512bd4'
+		opensuse: '#73BA25',
 	});
 
 	$: techStackIcons = techStacks.sort().map((word) => {
@@ -82,7 +85,7 @@
 	<h3 class="mb-2 text-2xl font-semibold">{title}</h3>
 	<div class="project-card-description mb-4 text-gray-300">{@html description}</div>
 	<div class="mb-4 flex flex-wrap items-center gap-4">
-		{#each techStackIcons as { Icon, label }}
+		{#each techStackIcons as { Icon, label } (label)}
 			<div class="flex items-center gap-2 rounded bg-gray-700 px-3 py-1 text-sm text-white">
 				<Icon size={20} />
 				<span>{label}</span>

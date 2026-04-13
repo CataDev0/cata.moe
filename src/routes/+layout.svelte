@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.webp';
 	import { page } from '$app/state';
 	import { slide } from 'svelte/transition';
 
@@ -31,7 +31,7 @@
 <footer>
 	<div class="bg-gray-800 p-6 shadow-lg">
 		<div class="mx-auto flex justify-center gap-8 text-center text-gray-300">
-			{#each Object.entries(footerLinks) as entry}
+			{#each Object.entries(footerLinks) as entry (entry)}
 				<a href={entry[1]}><h4>{entry[0]}</h4></a>
 			{/each}
 		</div>

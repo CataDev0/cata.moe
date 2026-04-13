@@ -38,7 +38,7 @@
 			Cata
 		</h1>
 		<p class="relative h-[1.5em] overflow-hidden text-xl font-light text-gray-300 sm:text-2xl">
-			{#each texts as text, i}
+			{#each texts as text, i (text)}
 				{#if textState === i}
 					<span
 						class="absolute top-0 left-0 w-full text-center"
@@ -62,7 +62,7 @@
 			<p class="pl-2 text-xl text-gray-300">An Overview of Key Projects I Have Worked On</p>
 		</div>
 		<div class="grid gap-8 md:grid-cols-2">
-			{#each projects as project, i}
+			{#each projects as project, i (project)}
 				<div use:viewport class="revealable" style="transition-delay: {i * 150}ms">
 					<ProjectCard {...project} />
 				</div>
@@ -76,7 +76,7 @@
 			<p class="pl-2 text-xl text-gray-300">Current Hardware Lineup</p>
 		</div>
 		<div class="grid gap-8 md:grid-cols-1">
-			{#each systems as system, i}
+			{#each systems as system, i (system)}
 				<div use:viewport class="revealable" style="transition-delay: {i * 150}ms">
 					<SystemsCard {...system} {overrideIcon} />
 				</div>
